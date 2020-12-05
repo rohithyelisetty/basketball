@@ -98,7 +98,7 @@ function session() {
     document.getElementById("Midrange").innerHTML = "Midrange: 0/0 - 0%";
     document.getElementById("Deep").innerHTML = "Deep: 0/0 - 0%";
     document.getElementById("ShotChart").innerHTML =
-        '<button><img src="ShotChart.png" class="ShotChart"></button>';
+        '<button><img src="./public/ShotChart.png" class="ShotChart"></button>';
     storage.setItem("pastSessions", pastSessions.innerHTML);
     storage.setItem("sessions", sessions);
 }
@@ -120,7 +120,7 @@ function clearSessions() {
     document.getElementById("Midrange").innerHTML = "Midrange: 0/0 - 0%";
     document.getElementById("Deep").innerHTML = "Deep: 0/0 - 0%";
     document.getElementById("ShotChart").innerHTML =
-        '<button><img src="ShotChart.png" class="ShotChart"></button>';
+        '<button><img src="./public/ShotChart.png" class="ShotChart"></button>';
     document.getElementById("overall").innerHTML = '<h2>All-time Stats</h2>' +
         '<h4 id="OverallFG">FG: 0/0 - 0%</h4>' +
         '<h4 id="OverallLayup">Layup: 0/0 - 0%</h4>' +
