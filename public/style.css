@@ -1,0 +1,168 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ShotChart {
+    position: relative;
+    width: 100%;
+}
+
+#FG {
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Layup {
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Midrange {
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Deep {
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.session {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#session {
+    display: none;
+}
+
+#sessions {
+    margin-left: 2%;
+    overflow-y: auto;
+}
+
+#overall,
+.sessionStats {
+    margin-left: 2%;
+}
+
+.miss {
+    color: red;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.make {
+    color: lightgreen;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.tab {
+    color: white;
+    height: 10%;
+    width: 80%;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.clear {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.switch {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 24.3%;
+    height: 7%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 76.47%;
+    width: 43.33%;
+    left: 6.12%;
+    bottom: 10.8%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: green;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.slider.round {
+    border-radius: 261.5px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Shot Counter</title>
+</head>
+
+<body>
+    <div id="shotChart">
+        <div id="ShotChart" onclick="mouseOnClick(event)">
+            <button><img src="ShotChart.png" class="ShotChart"></button>
+        </div>
+
+        <label class="switch">
+            <input type="checkbox" id="switch" onchange="toggle()" checked>
+            <span class="slider round"></span>
+        </label>
+
+        <br>
+
+        <h4 id="FG">FG: 0/0 - 0%</h4>
+        <h4 id="Layup">Layup: 0/0 - 0%</h4>
+        <h4 id="Midrange">Midrange: 0/0 - 0%</h4>
+        <h4 id="Deep">Deep: 0/0 - 0%</h4>
+
+        <br>
+
+        <button class="btn btn-primary session" onclick="session(); sessionChange()">End Session</button>
+    </div>
+
+    <div id="session">
+        <h1>Sessions</h1>
+        <div id="overall">
+            <h2>All-time Stats</h2>
+            <h4 id="OverallFG">FG: 0/0 - 0%</h4>
+            <h4 id="OverallLayup">Layup: 0/0 - 0%</h4>
+            <h4 id="OverallMidrange">Midrange: 0/0 - 0%</h4>
+            <h4 id="OverallDeep">Deep: 0/0 - 0%</h4>
+        </div>
+        <br>
+        <h2 class="sessionStats">Session Stats</h2>
+        <div id="sessions"></div>
+        <button class="btn btn-primary clear" onclick="clearSessions()">Clear Sessions</button>
+    </div>
+
+    <table class="tab">
+        <tr>
+            <td><button class="btn btn-primary" onclick="shot()">Shot Chart</button></td>
+            <td><button class="btn btn-primary" onclick="sessionChange()">Sessions</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
